@@ -1,4 +1,4 @@
-// +build !windows,!darwin
+//go:build !windows && !darwin
 
 package configdir_test
 
@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/kirsle/configdir"
+	"github.com/17xande/configdir"
 )
 
 func reset() {

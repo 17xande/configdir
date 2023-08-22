@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kirsle/configdir"
+	"github.com/17xande/configdir"
 )
 
 // Quick start example for a common use case of this module.

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/kirsle/configdir"
+	"github.com/17xande/configdir"
 )
 
 // TestCase provides common inputs and outputs for the functions being tested.
@@ -24,13 +24,14 @@ func init() {
 // Common logic for the local paths, which return single values.
 //
 // Parameters:
-//      t (*testing.T)
-//      pathType (string): "config" or "cache", controls which environment
-//          variable to play with and which path function to call.
-//      defaultPrefix (string): the default path prefix for the kind of path
-//          being tested, e.g. "/home/user/.config" for config paths.
-//      customPrefix (string): when a custom value is set for the environment
-//          variable, this is that path prefix instead of the default.
+//
+//	t (*testing.T)
+//	pathType (string): "config" or "cache", controls which environment
+//	    variable to play with and which path function to call.
+//	defaultPrefix (string): the default path prefix for the kind of path
+//	    being tested, e.g. "/home/user/.config" for config paths.
+//	customPrefix (string): when a custom value is set for the environment
+//	    variable, this is that path prefix instead of the default.
 func testLocalCommon(t *testing.T, pathType, defaultPrefix, customPrefix string) {
 	reset()
 
